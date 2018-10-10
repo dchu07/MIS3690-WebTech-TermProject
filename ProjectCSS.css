@@ -1,0 +1,14 @@
+
+h1{
+    font-size:40pt;
+    font-style: italic;
+    text-align: center;
+    color:rgb(231, 145, 114);
+}
+span#dc{
+    font-size: 30pt;
+    font-style: normal;
+}
+td,tr{
+    font-size: 12pt;
+}
