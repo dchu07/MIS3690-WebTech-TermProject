@@ -5,10 +5,35 @@ h1{
     text-align: center;
     color:rgb(231, 145, 114);
 }
+h2{
+    text-align: center;
+    color: rgb(164, 185, 245);
+}
+h3{
+    text-align: center;
+    font-style: italic;
+    color: grey;
+}
 span#dc{
     font-size: 30pt;
     font-style: normal;
 }
 td,tr{
     font-size: 12pt;
+}
+img{
+    width: 330px;
+}
+video{
+    width: 330px;
+}
+.midbreaks{
+    width: 800px;
+}
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }

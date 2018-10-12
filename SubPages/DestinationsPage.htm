@@ -4,16 +4,12 @@
 <head>
 
     <title> Destinations - Travelling with DC </title>
-    <link rel="stylesheet" type="text/css" href="ProjectCSS.css"/>
+    <link rel="stylesheet" type="text/css" href="../ProjectCSS.css"/>
 
     <style type="text/css">
         html{
             background:rgb(234, 250, 244);
             font-family: 'Trebuchet MS';
-        }
-        h1{
-            text-align: center;
-            color:rgb(231, 145, 114);
         }
         p{
             text-align: center;
@@ -48,13 +44,32 @@
         <td>
             <a href="About.htm">About Me</a>
         </td>
+        <td> | </td>
+        <td>
+            <a href="SiteMap.htm">Site Map</a>
+        </td>
     </tr>
     </table>
+
     <br>
     <hr>
+
     <h1>
         DESTINATIONS
     </h1>
-    <p>Locations Travelled to</p>
+    <p>Locations Travelled to (click on map locations to see where I've travelled to)</p>
+    <p>Cape Cod</p>
+    <p>New York</p>
+    <p>Los Angeles</p>
+    
+    <p ><img style="width:1000px;" src="../Images/US Map.png" usemap="#USMap" alt="US Map" title="Clickable US Map"> </p>
+    
+    <map name="USMap">
+        <area shape="circle" coords="890,176,10" href="../Articles/CapeCod.htm" alt="Cape Cod">
+        <area shape="circle" coords="850,200,10" href="../Articles/NewYork.htm" alt="New York">
+        <area shape="circle" coords="152,367,10" href="../Articles/LA.htm" alt="Los Angeles">
+    </map>
+   
+
 </body>
 </html>
