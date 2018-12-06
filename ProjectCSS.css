@@ -1,12 +1,36 @@
-
+html {
+    font-family: monospace;
+}
+.navbar {
+    overflow: hidden;
+    background-color:white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: navy;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: monospace;
+}
+.navbar a:hover {
+    background: black;
+    color: white;
+}
 h1{
     font-size:40pt;
-    font-style: italic;
+    font-family: monospace;
     text-align: center;
-    color:rgb(231, 145, 114);
+    color:lightskyblue;
 }
 h2{
     text-align: center;
+    font-size: 28px;
     color: rgb(164, 185, 245);
 }
 h3{
@@ -20,12 +44,6 @@ span#dc{
 }
 td,tr{
     font-size: 12pt;
-}
-img{
-    width: 330px;
-}
-video{
-    width: 330px;
 }
 .midbreaks{
     width: 800px;

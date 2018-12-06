@@ -7,50 +7,35 @@
     <link rel="stylesheet" type="text/css" href="../ProjectCSS.css"/>
 
     <style type="text/css">
-        html{
-            background:rgb(234, 250, 244);
-            font-family: 'Trebuchet MS';
-        }
         p{
             font-style: italic;
-            font-size: 14px;
         }
     </style>
 
+    <script type="text/javascript">
+        function enlarge(x) {
+            let i = document.getElementById(x);
+            let w = i.width;
+            i.width = w * (1 + 0.5);
+        }
+        function shrink(x) {
+            let i = document.getElementById(x);
+            let w = i.width;
+            i.width = w / (1 + 0.5);
+        }
+    </script>
+
 </head>
 <body>
-    <table align="right">
-    <!--table of contents-->
-    <tr>
-        <td>
-            <a href="../index.htm">Home Page</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="../SubPages/FeaturedPage.htm">Featured</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="../SubPages/DestinationsPage.htm">Destinations</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="../SubPages/Gallery.htm">Gallery</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="../SubPages/Contact.htm">Contact</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="../SubPages/About.htm">About Me</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="../SubPages/SiteMap.htm">Site Map</a>
-        </td>
-    </tr>
-    </table>
+    <div class="navbar">
+        <a href="../index.htm">Home</a>
+        <a href="../SubPages/FeaturedPage.htm">Featured</a>
+        <a href="../SubPages/DestinationsPage.htm">Destinations</a>
+        <a href="../SubPages/Gallery.htm">Gallery</a>
+        <a href="../SubPages/Contact.htm">Contact</a>
+        <a href="../SubPages/About.htm">About Me</a>
+        <a href="../SubPages/SiteMap.htm">Site Map</a>
+    </div>
 
     <br>
     <hr>
@@ -88,7 +73,8 @@
 
         </td>
         <td colspan="2">
-            <img class="rotate90" src="../Images/Cape Code 4.JPG" alt="Cape Code" title="Cape Cod">
+            <img width="330px" class="rotate90" onmouseover="enlarge(this.id)" onmouseout="shrink(this.id)"
+            id="cc4" src="../Images/Cape Cod 4.JPG" alt="Cape Code" title="Cape Cod">
         </td>
     </tr>
     </table>

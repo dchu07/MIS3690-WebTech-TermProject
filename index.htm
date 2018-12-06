@@ -7,127 +7,107 @@
     <link rel="stylesheet" type="text/css" href="ProjectCSS.css"/>
 
     <style type="text/css">
-        html{
-            background:rgb(234, 250, 244);
-            font-family: 'Trebuchet MS';
-        }
         p{
             font-style: italic;
             font-size: 14px;
         }
-        div{
+        div#audio{
             position: fixed;
             bottom: 0;
         }
-    </style>
+        .img{
+            width: 330px;
+        }
+        .overlay {
+            width: 100%;
+        }
+        .overlay .image {
+            display: block;
+            width: 100%;
+            height: 800px;
+        }
+        .overlay .text {
+            color: white;
+            font-size: 55px;
+            line-height: 1.15em;
+            text-shadow: 2px 2px 2px #000;
+            text-align: center;
+            font-family: monospace;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
+        span#author {
+            font-size: 35px;
+        }
+        .me {
+            color: lightskyblue;
+            font-size: 25px;
+            line-height: 1.5em;
+            text-shadow: 2px 2px 2px #000;
+            text-align: center;
+            font-family: monospace;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
+        .btn:hover {
+            background-color: black;
+            color: white;
+        }
+        .btn {
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: lightgray;
+            color: black;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style> 
 
 </head>
 
 <body>
     <!--audio file-->
-    <div>
+    <div id="audio">
         <audio controls align="right">
             <source src="Audio/san-holo-trip.mp3" type="audio/mp3">
         </audio>
     </div>
-
-    <h1>Travelling with D<span id=dc>emi</span> C<span id=dc>hu</span></h1>
-    <table align="right">
-    <!--table of contents-->
-    <tr>
-        <td>
-            <a href="index.htm">Home Page</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="SubPages/FeaturedPage.htm">Featured</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="SubPages/DestinationsPage.htm">Destinations</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="SubPages/Gallery.htm">Gallery</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="SubPages/Contact.htm">Contact</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="SubPages/About.htm">About Me</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="SubPages/SiteMap.htm">Site Map</a>
-        </td>
-    </tr>
-    </table>
-    <br>
-
-    <hr>
-
-    <table align="center">
-        <tr>
-            <td>
-                <h3>Hey I'm Demi. I love travelling and exploring new places around the world. <br>
-                I hope this site gives you some inspiration to go and take on your own adventures.</h3>
-            </td>
-        </tr>
-    </table>
-
-    <hr class="midbreaks">
-
-    <table align="center" cellspacing="0">
-    <tr>
-        <td colspan="2">
-            <h2>Going to Cape Cod Before it gets Too Cold</h2>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <p>October 8th, 2018</p>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            This Columbus Day weekend I got a chance to travel <br>
-            to Cape Cod. <br>
-            Cape Cod is in the southeastern corner of mainland <br>
-            Massachusetts. It is a town full of American history, <br>
-            culture, and is often knwon as "America's Hometown." <br>
-            The <a href="https://en.wikipedia.org/wiki/Thanksgiving_(United_States)#Harvest_festival_observed_by_the_Pilgrims_at_Plymouth">First Thanksgiving Feast</a> was actually held here. <br>
-            Though Cape Cod is full of U.S. culture and hitory, <br>
-            it is known for scenic views of the Atlnatic Ocean. <br>
-            It is known fo rits unique rustic architecture, <br>
-            espcially the beach houses. <br>
-            <br>
-            Because of these sceneric and architectural qualities, <br>
-            I decided to go to Cape Cod and enjoy the beach before <br>
-            it got too cold. <br>
-            <br>
-            To see what the beach at Cape Cod was like click on <br>
-            the <a href="SubPages/Gallery.htm">Gallery</a>. <br>
-            <br>
-            <a href="Articles/CapeCod.htm">Read More</a>
-        </td>
-        <td colspan="2">
-            <img class="rotate90" src="Images/Cape Code 4.JPG" alt="Cape Code" title="Cape Cod">
-        </td>
-    </tr>
-    </table>
     
+    <div class="navbar">
+        <a href="index.htm">Home</a>
+        <a href="SubPages/FeaturedPage.htm">Featured</a>
+        <a href="SubPages/DestinationsPage.htm">Destinations</a>
+        <a href="SubPages/Gallery.htm">Gallery</a>
+        <a href="SubPages/Contact.htm">Contact</a>
+        <a href="SubPages/About.htm">About Me</a>
+        <a href="SubPages/SiteMap.htm">Site Map</a>
+    </div>
 
-    <hr class="midbreaks">
-
-    <h2>New York for Labor Day Weekend</h2>
-    <p></p>
-
-    <hr class="midbreaks">
-
-    <h2>Why LA is Perfect for the Summer</h2>
-    <p></p>
+    <div class="overlay">
+        <img class="image" src="Images/header.JPG" alt="Header">
+        <div class="text">
+            Life is either a daring <br>ADVENTURE<br> or nothing at all <br> <span id="author">-Helen Keller-</span>
+        </div>
+        <div class="me">
+            Hey I'm Demi,<br>
+            I love travelling and exploring new places around the world <br>
+            I hope this site gives you some inspiration to go and take on your own adventures
+        </div>
+        <button class="btn" onClick="location.href='SubPages/FeaturedPage.htm'">Join me on My Adventures</button>
+    </div>
 
 </body>
 </html>

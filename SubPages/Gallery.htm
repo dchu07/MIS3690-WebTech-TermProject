@@ -7,52 +7,44 @@
     <link rel="stylesheet" type="text/css" href="../ProjectCSS.css"/>
 
     <style type="text/css">
-        html{
-            background:rgb(234, 250, 244);
-            font-family: 'Trebuchet MS';
-        }
         p{
             text-align: center;
         }
+        video{
+            width: 330px;
+        }
+        img {
+            width: 330px;
+        }
     </style>
 
-</head>
-<body>
-    <table align="right">
-    <!--table of contents-->
-    <tr>
-        <td>
-            <a href="../index.htm">Home Page</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="FeaturedPage.htm">Featured</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="DestinationsPage.htm">Destinations</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="Gallery.htm">Gallery</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="Contact.htm">Contact</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="About.htm">About Me</a>
-        </td>
-        <td> | </td>
-        <td>
-            <a href="SiteMap.htm">Site Map</a>
-        </td>
-    </tr>
-    </table>
+    <script type="text/javascript">
+        var slides = new Array("../Images/Cape Cod 2.jpg", "../Images/Cape Cod 4.jpg");
+        var counter = 0;
+        var i = 0;
+        function slideShow() {
+            let img = document.getElementById("slide")
+            if (i == slides.length) {
+                i = 0;
+            }
+            counter++;
+            img.src = slides[i];
+            i++;
+            setTimeout("slideShow()", 1000);
+        }
+    </script>
 
-    <br>
-    <hr>
+</head>
+<body onload="slideShow()">
+    <div class="navbar">
+        <a href="../index.htm">Home</a>
+        <a href="FeaturedPage.htm">Featured</a>
+        <a href="DestinationsPage.htm">Destinations</a>
+        <a href="Gallery.htm">Gallery</a>
+        <a href="Contact.htm">Contact</a>
+        <a href="About.htm">About Me</a>
+        <a href="SiteMap.htm">Site Map</a>
+    </div>
 
     <h1>
         GALLERY
@@ -71,7 +63,7 @@
                 </video>
             </td>
             <td>
-                <img class="rotate90" src="../Images/Cape Code 4.JPG" alt="Cape Cod" title="Cape Cod">
+                <img class="rotate90" src="../Images/Cape Cod 4.JPG" alt="Cape Cod" title="Cape Cod">
             </td>
             <td>
                 <video controls>
@@ -80,5 +72,11 @@
             </td>
         </tr>
     </table>
+    <br>
+    <br>
+    <br>
+    <p>
+        <img class="rotate90" width="350px" id="slide" src="../Images/Cape Code 2.jpg" alt="Slide Show of Trips" title="Trips"/>
+    </p>
 </body>
 </html>
